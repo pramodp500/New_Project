@@ -4,7 +4,6 @@ import path from 'path';
 const DB_PATH = path.join(process.cwd(), 'data', 'expenses.db');
 
 let db: Database.Database | null = null;
-let cachedTotalExpenses: number | null = null;
 
 function getDb(): Database.Database {
   if (!db) {
@@ -171,10 +170,7 @@ export function deleteExpense(id: number) {
 export function getDashboardStats() {
   const db = getDb();
 
-  if (cachedTotalExpenses === null) {
-    cachedTotalExpenses = (db.prepare('SELECT COALESCE(SUM(amount), 0) as total FROM expenses').get() as { total: number }).total;
-  }
-  const totalExpenses = cachedTotalExpenses;
+  const totalExpenses = (db.prepare('SELECT COALESCE(SUM(amount), 0) as total FROM expenses').get() as { total: number }).total;
   const numberOfExpenses = (db.prepare('SELECT COUNT(*) as count FROM expenses').get() as { count: number }).count;
   const highestExpense = (db.prepare('SELECT COALESCE(MAX(amount), 0) as max_amount FROM expenses').get() as { max_amount: number }).max_amount;
   const averageExpense = numberOfExpenses > 0 ? totalExpenses / numberOfExpenses : 0;

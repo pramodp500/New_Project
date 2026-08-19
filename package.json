@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "verify": "kane-cli testmd run tests/kane/ --agent --headless --timeout 300",
+    "closed-loop": "powershell -ExecutionPolicy Bypass -File scripts/closed-loop.ps1",
+    "closed-loop:headless": "powershell -ExecutionPolicy Bypass -File scripts/closed-loop.ps1 -Headless"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.3",

@@ -1,0 +1,15 @@
+{
+  "maxRetries": 3,
+  "watchIntervalSeconds": 5,
+  "debounceSeconds": 2,
+  "watchPaths": ["src/"],
+  "watchExtensions": ["*.tsx", "*.ts", "*.jsx", "*.js"],
+  "kaneTestPattern": "tests/kane/*_test.md",
+  "kaneTimeout": 300,
+  "kaneHeadless": true,
+  "appUrl": "http://localhost:3000",
+  "appDir": "expenseflow-ai",
+  "devServerCommand": "npm run dev",
+  "devServerReadyPattern": "Ready in",
+  "repairAgentFlags": "--auto --pure"
+}

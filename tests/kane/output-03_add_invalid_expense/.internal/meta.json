@@ -1,18 +1,18 @@
 {
+  "commit_id": "965075e6-3670-4e76-88db-6525daeee1ad",
   "test_id": "e6da08cb-1c74-4180-9be3-66af87fb3753",
+  "testcase_id": "01M08JYD3D7EFSMN3CFKWH9JJ4",
   "project_id": "01M08DKA2J9JD86JY5SFGQQP68",
   "folder_id": "01M08DKG8QD2MWWW9E585T4A6J",
   "org_id": "1584789",
   "session_name": "03_add_invalid_expense",
-  "commit_id": "965075e6-3670-4e76-88db-6525daeee1ad",
-  "testcase_id": "01M08JYD3D7EFSMN3CFKWH9JJ4",
   "executions": [
     {
-      "execution_id": "d3eb38e1-7b98-43b2-ba16-0511aa611de9",
+      "execution_id": "e121f62e-9187-4a67-be1e-4757ab8da4f9",
       "run_kind": "author",
-      "status": "broken",
+      "status": "failed",
       "valid": true,
-      "at": "2026-08-17T19:26:13.824Z"
+      "at": "2026-08-19T21:01:10.538Z"
     }
   ]
 }

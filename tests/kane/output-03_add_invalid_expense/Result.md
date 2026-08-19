@@ -1,20 +1,20 @@
 ---
 test: ../03_add_invalid_expense_test.md
 status: failed
-started: 2026-08-17T19:25:01.699Z
-duration_s: 70
-session_id: 965075e6-3670-4e76-88db-6525daeee1ad
+started: 2026-08-19T20:59:20.436Z
+duration_s: 110
+session_id: 49ef034a-077f-4abd-8fac-a856b6db6cd1
 ---
 
 # Add Invalid Expense — Validation Errors — Result
 
-## Open the Add Expense page ✓ passed (29.2s)
+## Open the Add Expense page ✓ passed (2.2s)
 md5: 5618f9a3eda5d81b0194d0ce88928f35
 Open http://localhost:3000/expenses/add. Wait for the page to fully load. Verify the expense form is visible with Amount, Category, Date, Payment Method, and Description fields.
 
-## Submit the empty form and verify all validation errors ✗ failed (36.2s)
+## Submit the empty form and verify all validation errors ✗ failed (100.7s)
 md5: 418ec5b1fe570a1bd3cda89f06e97d7e
-Reason: AP determined agent is stuck — no viable actions remain — bug verdict: Submit click targeted description field instead of Add Expense button [automation_bug/agent_misstep, confidence 0.92]
+Reason: Checkpoint assertion failed: "a validation error message "Amount is required" appears on the page" — bug verdict: Amount validation assertion mismatches prefilled 0.00 field [automation_bug/state_transition_bug, confidence 0.93]
 Click the "Add Expense" submit button without filling in any fields. Verify that a validation error message "Amount is required" appears on the page. Verify that a validation error message "Category is required" appears on the page. Verify that a validation error message "Description is required" appears on the page. Verify that a validation error message "Payment method is required" appears on the page. Verify that no expense was created (the URL should still be "/expenses/add" and no success notification should appear).
 
 ## Submit a negative amount and verify the error ⏭ skipped

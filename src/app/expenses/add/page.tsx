@@ -30,7 +30,7 @@ export default function AddExpensePage() {
 
     setNotification({ message: 'Expense added successfully', type: 'success' });
     notifyDashboardMutation();
-    setResetKey((k) => k + 1);
+    router.push('/expenses');
   }, []);
 
   const handleCancel = useCallback(() => {
