@@ -1,0 +1,18 @@
+{
+  "test_id": "be61ba75-dc82-468e-8b12-939a587de889",
+  "project_id": "01M08DKA2J9JD86JY5SFGQQP68",
+  "folder_id": "01M08DKG8QD2MWWW9E585T4A6J",
+  "org_id": "1584789",
+  "session_name": "05_delete_expense",
+  "commit_id": "dfa7aabf-2273-4ce3-a3de-431cf30b85e2",
+  "testcase_id": "01M08K5VE5NRRCASAPD2NXZC45",
+  "executions": [
+    {
+      "execution_id": "596f9fdf-e8ea-4a69-8684-5cd3059994c0",
+      "run_kind": "author",
+      "status": "failed",
+      "valid": true,
+      "at": "2026-08-17T19:36:05.693Z"
+    }
+  ]
+}

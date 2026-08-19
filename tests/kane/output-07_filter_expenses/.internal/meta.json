@@ -1,0 +1,18 @@
+{
+  "test_id": "33eea325-c4be-4631-a73e-cbdb0d96386b",
+  "project_id": "01M08DKA2J9JD86JY5SFGQQP68",
+  "folder_id": "01M08DKG8QD2MWWW9E585T4A6J",
+  "org_id": "1584789",
+  "session_name": "07_filter_expenses",
+  "commit_id": "e65c7368-8d06-4dfd-b8c4-d02faaba2298",
+  "testcase_id": "01M08KM8B0BT2WJ016SWFE1KG2",
+  "executions": [
+    {
+      "execution_id": "3cb9f3bd-ee9a-40c4-b715-1c197f5021f7",
+      "run_kind": "author",
+      "status": "failed",
+      "valid": true,
+      "at": "2026-08-17T19:40:14.049Z"
+    }
+  ]
+}
